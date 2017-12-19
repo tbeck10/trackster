@@ -6,40 +6,81 @@ html {
   font-size: 16px;
 }
 
-div {
-  display: block;
+body {
+  min-width: 570px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.5;
+  color: #4a4a4a;
 }
 
-header {
-  background-color: rgb(35, 2, 63);
+input:focus {
+  outline: none;
 }
 
-.flex {
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.header {
+  padding: 2.75rem 0;
+  background-color: #22013f;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Righteous", cursive;
+  color: #ff00ab;
+}
+
+.header input {
+  border-radius: 19px;
+  margin-right: 0.625rem;
+}
+
+.header .fa-search {
+  padding: 0.5rem;
+  border-radius: 19px;
+  text-align: center;
+  background-color: #ff00ab;
+  color: #22013f;
+}
+
+.header .fa-search:hover {
+  background-color: #ff66cc;
+  cursor: pointer;
+}
+
+.attributes {
+  background-color: #6800ff;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.track {
+  display: flex;
+  padding: 0.6rem;
+  border-bottom: 1px solid #cccccc;
+  line-height: 1;
+}
+
+.track:hover {
+  background-color: #f0eef3;
+}
+
+.track div {
   display: flex;
   align-items: center;
 }
 
-.row {
-  margin: 2rem;
+.play-button a {
+  display: flex;
+  align-items: center;
+  color: #ff00ab;
 }
 
-.logo h1 {
-  font-family: "Righteous";
-  font-size: 2.5rem;
-  color: rgb(255, 0, 171);
-}
-
-.search-bar {
-  background-color: white;
-  border-radius: 25px;
-  color: rgb(191, 191, 191);
-  margin-right: 1rem;
-  height: 2rem;
-}
-
-.search-icon {
-  justify-content: center;
-  background-color: rgb(255, 102, 204);
-  border-radius: 25px;
-  height: 2rem;
+.play-button a:hover {
+  color: #ff66cc;
 }
